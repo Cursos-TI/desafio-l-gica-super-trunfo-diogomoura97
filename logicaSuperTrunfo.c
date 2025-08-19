@@ -4,8 +4,6 @@
 //Teste Diogo Moura
 
 int main() {
-
-    //NÍVEL NOVATO
     
     //****CARTA 1****
    
@@ -110,17 +108,94 @@ int main() {
     printf("PIB per capita: %.2f \n",pibpercapita2);
 
 
-    //Comparação das cartas com if e else
+    //NÍVEL AVENTUREIRO
 
-    printf("Comparação de cartas \n");
+    //Comparação das cartas através de switch
 
-    printf("Carta 1 - %s: %d\n Carta 2 - %s: %d \n",nomecidade1,numeropontosturisticos1,nomecidade2,numeropontosturisticos2);
+    //Escolhendo 2 atributos de comparação através de um switch dentro de um loop for de 2 repetições
 
-    if (numeropontosturisticos1>numeropontosturisticos2){
-        printf("Resultado: Carta 1 - %s venceu! \n",nomecidade1);
-    }else{
+    for(int i=0;i<2;i++){
+        printf("Escolha o atributo da carta a ser comparado \n");
+        printf("1 - Nome do país\n");
+        printf("2 - População \n");
+        printf("3 - Área\n");
+        printf("4 - PIB\n");
+        printf("5 - Número de pontos turísticos\n");
+        printf("6 - Densidade populacional\n");
+        
+        int atributo;
+    
+        scanf("%d",&atributo);
 
-        printf("Resultado: Carta 2 - %s venceu! \n",nomecidade2);
+        switch (atributo)
+        {
+    
+        case 1:
+            printf("Nome do país - Carta 1 %s: %s| Carta 2 %s: %s \n",nomecidade1,nomepaís1,nomecidade2,nomepaís2);
+            
+            break;
+        case 2:
+            printf("População - Carta 1 %s: %d | Carta 2 %s: %d \n",nomecidade1,populacao1,nomecidade2,populacao2);
+            if (populacao1>populacao2){
+                printf("Carta 1 venceu! \n");
+            }else if (populacao2>populacao1)
+            {
+                printf("Carta 2 venceu! \n");
+            }else{
+                printf("Empate! \n");
+            }
+            break;
+        case 3:
+            printf("Área - Carta 1 %s: %.2f | Carta 2 %s: %.2f \n",nomecidade1,area1,nomecidade2,area2);
+            if (area1>area2){
+                printf("Carta 1 venceu! \n");
+            }else if (area2>area1)
+            {
+                printf("Carta 2 venceu! \n");
+            }else{
+                printf("Empate! \n");
+            }
+            break;
+        case 4:
+            printf("PIB - Carta 1 %s: %.2f | Carta 2 %s: %.2f \n",nomecidade1,pib1,nomecidade2,pib2);
+            if (pib1>pib2){
+                printf("Carta 1 venceu! \n");
+            }else if (pib2>pib1)
+            {
+                printf("Carta 2 venceu! \n");
+            }else{
+                printf("Empate! \n");
+            }
+            break;
+        case 5:
+            printf("Número de pontos turísticos - Carta 1 %s: %d | Carta 2 %s: %d \n",nomecidade1,numeropontosturisticos1,nomecidade2,numeropontosturisticos2);
+            if (numeropontosturisticos1>numeropontosturisticos2){
+                printf("Carta 1 venceu! \n");
+            }else if (numeropontosturisticos2>numeropontosturisticos1)
+            {
+                printf("Carta 2 venceu! \n");
+            }else{
+                printf("Empate! \n");
+            }
+            break;
+        case 6:
+            printf("Densidade populacional - Carta 1 %s: %2.f | Carta 2 %s: %2.f \n",nomecidade1,densidadepopulacional1,nomecidade2,densidadepopulacional2);
+            if (densidadepopulacional1<densidadepopulacional2){
+                printf("Carta 1 venceu! \n");
+            }else if (densidadepopulacional2<densidadepopulacional1)
+            {
+                printf("Carta 2 venceu! \n");
+            }else{
+                printf("Empate! \n");
+            }
+            break;
+        
+        default:
+            printf("Você não escolheu nenhuma atributo válido nas opções \n");
+            break;
+        }
+
+
     }
 
 }
