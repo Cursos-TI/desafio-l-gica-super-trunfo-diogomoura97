@@ -4,12 +4,15 @@
 //Teste Diogo Moura
 
 int main() {
-   
+
+    //NÍVEL NOVATO
+    
     //****CARTA 1****
    
     char estado1;
     char codigocarta1 [4] = "A01";
     char nomecidade1 [30] = "RioDeJaneiro";
+    char nomepaís1 [30]="Brasil";
     unsigned long int populacao1 = 6748000;
     float area1 = 1200.25;
     float pib1= 300.50;
@@ -25,6 +28,8 @@ int main() {
     scanf(" %s",&codigocarta1);
     printf("Insira o nome da cidade: ");
     scanf(" %s",&nomecidade1);
+    printf("Insira o nome do país: ");
+    scanf(" %s",&nomepaís1);
     printf("Insira o número da população: ");
     scanf(" %lu",&populacao1);
     printf("Insira a área (Km2): ");
@@ -45,6 +50,7 @@ int main() {
     printf("Estado: %c \n",estado1);
     printf("Código: %s \n",codigocarta1);
     printf("Nome da cidade:  %s \n",nomecidade1);
+    printf("Nome do país: %s \n",nomepaís1);
     printf("População:  %lu \n",populacao1);
     printf("PIB:  %.2f bilhões de reais \n",pib1);
     printf("Área: %2.f \n",area1);
@@ -57,6 +63,7 @@ int main() {
     char estado2;
     char codigocarta2 [4] = "B01";
     char nomecidade2 [30] = "SãoPaulo";
+    char nomepaís2 [30]="Brasil";
     unsigned long int populacao2 = 12325000;
     float area2 = 1521.11;
     float pib2 = 699.28;
@@ -72,6 +79,8 @@ int main() {
     scanf(" %s",&codigocarta2);
     printf("Insira o nome da cidade: ");
     scanf(" %s",&nomecidade2);
+    printf("Insira o nome do país: ");
+    scanf(" %s",&nomepaís2);
     printf("Insira o número da população: ");
     scanf(" %lu",&populacao2);
     printf("Insira a área (Km2): ");
@@ -92,12 +101,14 @@ int main() {
     printf("Estado: %c \n",estado2);
     printf("Código: %s \n",codigocarta2);
     printf("Nome da cidade:  %s \n",nomecidade2);
+    printf("Nome do país: %s \n",nomepaís2);
     printf("População:  %lu \n",populacao2);
     printf("PIB:  %.2f bilhões de reais \n",pib2);
     printf("Área: %2.f \n",area2);
     printf("Número de pontos turísticos: %d \n",numeropontosturisticos2);
     printf("Densidade populacional: %.2f \n",densidadepopulacional2);
     printf("PIB per capita: %.2f \n",pibpercapita2);
+
 
     //Comparação das cartas com if e else
 
