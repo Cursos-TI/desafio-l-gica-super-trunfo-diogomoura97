@@ -107,9 +107,6 @@ int main() {
     printf("Densidade populacional: %.2f \n",densidadepopulacional2);
     printf("PIB per capita: %.2f \n",pibpercapita2);
 
-
-    //NÍVEL AVENTUREIRO
-
     //Comparação das cartas através de switch
 
     //Escolhendo 2 atributos de comparação através de um switch dentro de um loop for de 2 repetições
@@ -194,6 +191,20 @@ int main() {
             printf("Você não escolheu nenhuma atributo válido nas opções \n");
             break;
         }
+
+
+    printf("Soma dos atributos das cartas \n");
+
+    float somacarta1 = (float)(populacao1+area1+pib1+numeropontosturisticos1+pibpercapita1+densidadepopulacional1);
+    float somacarta2 = (float)(populacao2+area2+pib2+numeropontosturisticos2+pibpercapita2+densidadepopulacional2);
+        
+    if(somacarta1>somacarta2){
+        printf("Carta 1 venceu na soma dos atributos. Tendo a carta 1: %.2f e a carta 2: %2.f \n",somacarta1,somacarta2);
+    }else if(somacarta2>somacarta1){
+        printf("Carta 2 venceu na soma dos atributos. Tendo a carta 2: %.2f e a carta 1: %2.f \n",somacarta2,somacarta1);
+    }else{
+        printf("Empate! \n");
+    }
 
 
     }
